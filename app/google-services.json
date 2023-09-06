@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1068069026593",
+    "project_id": "brojac-koraka-9998c",
+    "storage_bucket": "brojac-koraka-9998c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068069026593:android:acf4f3a17ad8797b715c60",
+        "android_client_info": {
+          "package_name": "com.example.brojac_koraka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068069026593-089jfsl6g5q7k4p4847dlrgss2h0k7mm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFI0_W1URgYmgCAcKp662mwP6F8CaDUBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068069026593-089jfsl6g5q7k4p4847dlrgss2h0k7mm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
