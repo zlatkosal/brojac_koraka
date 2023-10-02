@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/counter_for_steps_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/choose_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:text="@string/choose_time"
+        android:textColor="@color/black" />
+
+    <RadioGroup
+        android:id="@+id/time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/day_option"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/day"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/week_option"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/week"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/month_option"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/month"
+            android:textColor="@color/black" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/wanted_steps_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <EditText
+            android:id="@+id/enter_wanted_steps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_wanted_steps"
+            android:inputType="number"
+            android:maxLength="5"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/save_wanted_steps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="@string/save_wanted_steps"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/bar_chart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/average_steps_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        tools:text="Some text" />
+
+</LinearLayout>
